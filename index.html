@@ -1,103 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Exercices Javascript</title>
-</head>
-<body class="back">
+  </head>
+  <body class="back">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Exercices <span class="text-dark bg-warning p-1">JS</span></a>
-        </div>
-      </nav>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          Exercices
+          <span class="text-dark bg-warning p-1">JS</span>
+        </a>
+      </div>
+    </nav>
     <div class="container my-2 p-3">
-        <h1>Salut c'est <span class="text-warning">Germain</span> !!!</h1>
-        <p>J'aimerais que vous présentiez vos exercices sous une forme de ce type ...</p>
-        <!--les résumés-->
-        <div class="card bg-secondary text-white mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Exercice 1</h5>
-                <p>Vous allez entrer deux nombre et obtenir la somme de ces deux nombres</p>
-                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    C'est partie
-                  </button>
-                 
-            </div>
-           
+      <h1>
+        Salut c'est
+        <span class="text-warning">Germain</span>
+        !!!
+      </h1>
+      <p>
+        J'aimerais que vous présentiez vos exercices sous une forme de ce type
+        ...
+      </p>
+      <!--les résumés-->
+      <div class="card bg-secondary text-white mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Exercice 1</h5>
+          <p>
+            Vous allez entrer deux nombre et obtenir la somme de ces deux
+            nombres
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline-light"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            C'est partie
+          </button>
         </div>
-        <div class="card bg-warning text-secondary mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Exercice 2</h5>
-                <p>Vous allez entrer un nombre et sa table jusqu'à 10 va s'afficher</p>
-               
-                  <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                    C'est partie
-                  </button>
-            </div>
-           
-        </div>
+      </div>
+      <div class="card bg-warning text-secondary mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Exercice 2</h5>
+          <p>
+            Vous allez entrer un nombre et sa table jusqu'à 10 va s'afficher
+          </p>
 
-        <!-- Button trigger modal -->
-
-  
-  <!-- Modals -->
-  <!-- Modal 1 -->
-  <div class="modal fade bg-secondary" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Additionneur</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal2"
+          >
+            C'est partie
+          </button>
         </div>
-        <div class="modal-body">
-            <div class="d-flex justify-content-center">
-                <input type="text" class="form-control" id="nb1" placeholder="nombre 1">
+      </div>
+
+      
+
+      <!-- Modals -->
+      <!-- Modal 1 -->
+      <div
+        class="modal fade bg-secondary"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Additionneur</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nb1"
+                  placeholder="nombre 1"
+                />
                 <h2 class="mx-2">+</h2>
-                <input type="text" class="form-control" id="nb2" placeholder="nombre 2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nb2"
+                  placeholder="nombre 2"
+                />
+              </div>
+              <hr />
+              <div id="res"></div>
             </div>
-          <hr>
-          <div id="res"></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-          <button type="button" class="btn btn-primary" onclick="calcul()" >Calculer</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal 1 -->
-  <div class="modal fade bg-warning" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Exercice 2</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <h3>Table de multiplications</h3>
-          <input class="form-control" placeholder="entrez la table désirée" type="text" id="table">
-          <div id="restable"></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-          <button type="button" class="btn btn-warning" onclick="table()" >go</button>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fermer
+              </button>
+              <button type="button" class="btn btn-primary" onclick="calcul()">
+                Calculer
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+      <!-- Modal 2 -->
+      <div
+        class="modal fade bg-warning"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Exercice 2</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3>Table de multiplications</h3>
+              <input
+                class="form-control"
+                placeholder="entrez la table désirée"
+                type="text"
+                id="table"
+              />
+              <div id="restable"></div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fermer
+              </button>
+              <button type="button" class="btn btn-warning" onclick="table()">
+                go
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="exos.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
